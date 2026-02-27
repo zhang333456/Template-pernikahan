@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Pernikahan</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,6 +20,9 @@
   </div>
 </section>
 
+<!-- FALLING FLOWERS -->
+<div id="flowers"></div>
+
 <!-- MAIN CONTENT -->
 <section id="mainContent" class="hidden">
   <div class="container">
@@ -28,20 +31,33 @@
 
     <div class="couple">
       <div>
-        <h2>Nama Mempelai Pria</h2>
-        <p>Putra dari Bapak & Ibu</p>
+        <h2 id="displayGroom">Nama Mempelai Pria</h2>
+        <p id="displayParents">Ortu: Bapak & Ibu</p>
       </div>
       <div>
-        <h2>Nama Mempelai Wanita</h2>
-        <p>Putri dari Bapak & Ibu</p>
+        <h2 id="displayBride">Nama Mempelai Wanita</h2>
+        <p id="displayParents2">Ortu: Bapak & Ibu</p>
       </div>
     </div>
 
-    <div class="event">
-      <h2>Akad & Resepsi</h2>
-      <p>Sabtu, 10 Oktober 2026</p>
-      <p>Pukul 10.00 WIB</p>
-      <p>Hotel Mewah Ballroom, Jakarta</p>
+    <!-- FORM GIMMICK -->
+    <div class="form-section">
+      <h3>Test Nama & Info</h3>
+      <input type="text" id="groom" placeholder="Nama Mempelai Pria">
+      <input type="text" id="bride" placeholder="Nama Mempelai Wanita">
+      <input type="text" id="father" placeholder="Nama Ayah">
+      <input type="text" id="mother" placeholder="Nama Ibu">
+      <input type="text" id="address" placeholder="Alamat">
+      <button id="submitBtn">Tampilkan</button>
+    </div>
+
+    <!-- SCROLL GALLERY -->
+    <div class="scroll-gallery">
+      <img src="home1.png" class="scroll-image">
+      <img src="home2.png" class="scroll-image">
+      <img src="flower1.png" class="scroll-image">
+      <img src="flower2.png" class="scroll-image">
+      <img src="flower3.png" class="scroll-image">
     </div>
 
     <footer>
@@ -50,7 +66,6 @@
   </div>
 </section>
 
-<!-- AUDIO & SCRIPT -->
 <audio id="bgMusic" src="music.mp3" loop></audio>
 <script src="script.js"></script>
 </body>
