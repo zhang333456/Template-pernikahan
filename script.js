@@ -1,15 +1,28 @@
-// COVER OPEN
+// COVER OPEN & MUSIK
 const openBtn = document.getElementById("openBtn");
 const cover = document.getElementById("cover");
 const mainContent = document.getElementById("mainContent");
 const music = document.getElementById("bgMusic");
 
+// Tombol buka undangan → pasti memutar musik
 openBtn.addEventListener("click", () => {
   cover.style.display = "none";
   mainContent.classList.remove("hidden");
-  music.play();
+
+  // Coba play musik & tangani error autoplay
+  music.play().catch(err => {
+    console.log("Music play blocked, will try on first user interaction:", err);
+  });
+
   createFallingFlowers();
 });
+
+// BEKERJA DI SEMUA BROWSER: memaksa musik jalan saat klik pertama di halaman
+document.addEventListener('click', () => {
+  if(music.paused) {
+    music.play().catch(()=>{});
+  }
+},{once:true});
 
 // SCROLL ANIMATION
 const images = document.querySelectorAll('.scroll-image');
