@@ -11,21 +11,6 @@ openBtn.addEventListener("click", () => {
   createFallingFlowers();
 });
 
-// FORM GIMMICK
-const submitBtn = document.getElementById("submitBtn");
-submitBtn.addEventListener("click", () => {
-  const groom = document.getElementById("groom").value;
-  const bride = document.getElementById("bride").value;
-  const father = document.getElementById("father").value;
-  const mother = document.getElementById("mother").value;
-  const address = document.getElementById("address").value;
-
-  document.getElementById("displayGroom").innerText = groom;
-  document.getElementById("displayBride").innerText = bride;
-  document.getElementById("displayParents").innerText = `Ortu: ${father} & ${mother}`;
-  document.getElementById("displayParents2").innerText = `Ortu: ${father} & ${mother}`;
-});
-
 // SCROLL ANIMATION
 const images = document.querySelectorAll('.scroll-image');
 const observer = new IntersectionObserver(entries => {
@@ -41,7 +26,7 @@ images.forEach(img => observer.observe(img));
 function createFallingFlowers() {
   const flowersDiv = document.getElementById("flowers");
   const flowerFiles = ["flower1.png","flower2.png","flower3.png"];
-  for(let i=0;i<15;i++){
+  for(let i=0;i<20;i++){
     const img = document.createElement("img");
     img.src = flowerFiles[Math.floor(Math.random()*flowerFiles.length)];
     img.style.left = Math.random()*window.innerWidth + "px";
