@@ -1,27 +1,24 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'Montserrat', sans-serif; background:#fff; color:#333; text-align:center; overflow-x:hidden; }
-h1,h2 { font-family:'Playfair Display', serif; }
+h1,h2,h3 { font-family:'Playfair Display', serif; }
 
 #cover { height:100vh; display:flex; justify-content:center; align-items:center; background:linear-gradient(to bottom,#fff,#f8f8f8); }
-.cover-content { border:2px solid #d4af37; padding:40px; border-radius:10px; }
-.cover-content h1 { font-size:28px; margin-bottom:20px; color:#d4af37; }
-.cover-content h2 { font-size:22px; margin:10px 0; }
-button { margin-top:20px; padding:12px 30px; background:#d4af37; border:none; color:white; font-size:16px; cursor:pointer; border-radius:30px; transition:0.3s; }
-button:hover { background:#b9972e; }
+.cover-content { border:2px solid #d71a1a; padding:40px; border-radius:10px; }
+.cover-content h1 { font-size:28px; margin-bottom:20px; color:#d71a1a; }
+.cover-content h2 { font-size:22px; margin:10px 0; color:#d71a1a; }
+button { margin-top:20px; padding:12px 30px; background:#d71a1a; border:none; color:white; font-size:16px; cursor:pointer; border-radius:30px; transition:0.3s; }
+button:hover { background:#b33333; }
 .hidden { display:none; }
 
 .container { padding:60px 20px; }
-.title { font-size:32px; color:#d4af37; margin-bottom:20px; }
+.title { font-size:32px; color:#d71a1a; margin-bottom:20px; }
 .ayat { font-style:italic; margin-bottom:40px; }
 .couple { margin-bottom:40px; display:flex; justify-content:space-around; flex-wrap:wrap; }
-
-.form-section { margin:40px 0; }
-.form-section input { display:block; margin:10px auto; padding:10px; width:60%; max-width:400px; border-radius:10px; border:1px solid #ccc; }
-.form-section button { margin-top:10px; }
+.family { margin-bottom:40px; text-align:left; max-width:800px; margin-left:auto; margin-right:auto; }
+.event { margin-bottom:40px; border-top:2px solid #d71a1a; padding-top:20px; }
 
 .scroll-gallery { display:flex; flex-wrap:wrap; justify-content:center; margin-top:60px; }
 .scroll-gallery img { width:200px; margin:20px; opacity:0; transform:translateY(50px); transition:all 1s ease; border-radius:10px; }
-
 .scroll-image.visible { opacity:1; transform:translateY(0); }
 
 #flowers img { position:absolute; width:50px; opacity:0.9; animation:fall linear infinite; }
