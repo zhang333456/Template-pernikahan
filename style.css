@@ -77,6 +77,9 @@ button:hover {
 
 .couple {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .event {
